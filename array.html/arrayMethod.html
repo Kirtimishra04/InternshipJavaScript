@@ -1,0 +1,58 @@
+<!--//VIDEO 37------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//Array--Sort() function
+ var anArray=['Kirti','Simran','Ashu','VASHU','Shiva'];
+ var bArray=['sudeshna','eshna','riya','pratiksha'];
+document.write( "<i>Unsorted form : " + anArray + "<bR> </i>");
+// //SORTING HELPS IN ARRANGING ELEMENTS ACC.TO ALPHABETIC ORDER. 
+// anArray.sort();
+// document.write( "<b> Sorted form:  " + anArray+ "<br> <b>");
+
+    //---Array--Reverse() function.
+// anArray.reverse();
+// document.write(anArray ); //elements arranged in reverse order.
+   
+   //--------Array--Pop() function
+   anArray.pop(); //it delete the last element,
+   document.write(" using pop : " + anArray + "<BR>");
+   
+    anArray.push('cat');  //add value at end which is written inside push(____);
+   document.write( "using push : " + anArray+"<br>" );
+   
+   anArray.push('Almora');  //add value at end which is written inside push(____);
+   document.write( "using push 2nd time  : " + anArray + "<br>" );
+   
+   anArray.shift();  //remove the 1st  value 
+   document.write( "using shift : " + anArray + "<bR>" );
+   
+    anArray.unshift('Papaya');  //add at  the 1st  value 
+   document.write( "using unshift : " + anArray + "<bR>" );
+
+    //-using concat----1st method
+ //var bArray= anArray.concat('sudeshna','eshna','riya','pratiksha');
+     //used for merging two  OR MORE array
+   //document.write( "using concat : " + bArray + "<bR>" );
+//---------2nd method---
+var d=['34','21'];
+var c=anArray.concat(bArray);//DECLARE A NEW VARIABLE C 
+document.write( "2nd method of concat : " + c + "<br>");
+ var c=anArray.concat(bArray,d);
+ document.write( "<b> for adding 3 arrays : " + c + "<bR> <br></b>");
+ 
+    //FOR JOINING ELEMENTS OF ARRAY IN A BOX BY CHANGING THERE COMAA SIGN OR NOT.
+    c=anArray.concat(bArray);
+    var e=c.join(" & ");
+    document.write( " JOIN : " + e + "<br>");
+   
+   
+   </script>
+</body>
+</html>

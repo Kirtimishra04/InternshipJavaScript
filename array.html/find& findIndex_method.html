@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //--find() 
+        //it returns the first value at which the condition pass.and then stops.
+var age=[10,23,45,67];
+document.write(age +"<br>");
+var b=age.find(checkAdult);
+document.write(b+"<bR>");
+    function checkAdult(age){         //initialize the function.
+        return age>=18;
+    }
+//-----findIndex()---
+// it returns the index of the value which pass the condition first.
+    var age=[10,23,45,67];
+document.write(age +"<br>");
+var b=age.findIndex(checkAdult);
+document.write( " index of 1st passed element : " + b+"<bR>");
+    function checkAdult(age){         //initialize the function.
+        return age>=18;
+    }
+
+    </script>
+</body>
+</html>

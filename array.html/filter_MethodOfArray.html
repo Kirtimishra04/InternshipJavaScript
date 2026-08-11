@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //--filter()--
+        //filter method make an array of all the elements that passed the condition.
+        var age=[10,45,23,78,56];
+        document.write(age +"<br>");
+        var b=age.filter(checkAge);
+        document.write( "elements that passed the condition: " + b+"<br>");
+        // declare the function.
+        function checkAge(age){
+            return age>=20;
+        }
+    </script>
+</body>
+</html>

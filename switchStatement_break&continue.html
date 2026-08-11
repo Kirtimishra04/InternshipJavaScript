@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!--- <script>
+var day=3;
+switch(day){
+    case -1:
+        document.write("Today is Monday");
+        break;
+        case 0: case 1: case 2: //used for multiple cases having same value....
+            document.write("Today is Tuesday");
+            break;  
+            case 3:
+                document.write("today is wednesday <br>");
+                document.write("today is bad day");
+                break;
+                case 4:
+                    document.write("today is thursday");
+                    break;
+                    default:
+                        document.write("enter the valid day");
+
+}
+document.write("<br>");
+//usong the compariion operator with switch statement.
+var fruit=55;
+switch(true){
+    case(fruit>20 && fruit<30):
+        document.write("less fruits");
+        break;
+      case(fruit>35 && fruit<40):
+        document.write("medium amount of fruits");
+        break;
+        case(fruit==50):
+        document.write("plenty of fruits");
+        break;
+        default:
+            document.write("enter the valid amount of fruits");
+            break;
+}
+    </script>-->
+<!---break and continue     vdio 29.date- 6August2026-->
+
+<script>
+    // for(var i=1;i<=10;i++){
+    //     if(i===5){
+    //          //it will break the loop when the value of i is 5
+    //     document.write("<br> value of i: " + i);
+    //     break;}
+    //     document.write("place  of i: " + i + "<br>");
+    //     continue; //it will skip the value of i when the value of i is 5 and it will continue the loop
+    // }
+
+
+    //-----Q2...
+    // for(var a=1;a<=6;a++){
+    //      if(a===3){
+    //      continue;
+    //     document.write("<br> value of a: " + a + "<br>");}
+    //      }
+        
+      //--Q3----  
+      /* for(var a=1;a<=6;a++){
+         if(a===3){  
+         continue;
+            //document.write(" Value of a: " + a); //it will skip the value of a when the value of a is 3 and it will continue the loop
+         }
+     document.write("<br> value of a : " + a + "<br>"); //it will break the loop when the value of a is 3
+        }   */
+//----Q4.......
+/*for(var a=1;a<=10;a++){
+    if(a===5){
+        continue;
+    }
+    document.write("<br> value of a :" + a);
+}
+*/
+
+// print 1-50(skip every nuMBER DIVISIBLE BY 4,STOP THE LOOP WHEN THE VALUE OF A IS 40)
+for(var a=1;a<=50;a++){
+    if(a%4===0){
+        continue;
+    }
+    document.write(  "Number : " + a+ "<br> <br>" );
+   
+}
+
+//PRITN TABLE OF 7,BUT SKIP 7*5USING CONTINUE.
+/*var i=7;
+for( a=1;a<=10;a++){
+    if(a==5){
+        continue;
+    }
+    document.write(i + " * " + a + " = " + i*a + "<br>"  );
+}*/
+
+//PRINT 1-100, SKIP EVERY NUMBER DIVISIBLE BY 2 OR 3, STOP AT THE FIRST NUMBER DIVISIBLE BY 17. PRINT SKIPPED WHENEVER A NUMBER IS SKIPPED.
+for(var i=1;i<=100;i++){
+    //stop the loop at first number divisible by 17
+    if(i%17===0){
+        break;
+    }
+    //skip number divisible by 2 or 3
+    if(i%2===0 || i%3===0){
+        document.write("Skipped<br>");
+        continue;
+    }
+    //print the remaining numbers.
+    document.write(i +"<br>");
+}
+</script>
+
+
+</body>
+</html>

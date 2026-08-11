@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  --some()----TESTS whether the element is adult or not.
+        //for using some() methos a function should use all the time.
+        //it gives true value  :  if only one value passes the condition or more passes the condition
+// var age=[23,45,43,67,10,13];
+// document.write(age+"<BR>");
+//        var b=age.some(checkAdult);//here a function is taken --checkAdult--
+//         document.write(b);
+//        function checkAdult(age){//checkAdult is initialized here.
+//         return age>=18;//gives true in o/p: because there are may ages are >=18.
+//        }
+ 
+     //--every()------
+    // every() gives true only when all the elements passesthe condition
+     var age=[23,45,43,67,10,13];
+      document.write(age+"<BR>");
+        var b=age.every(checkAdult);//here a function is taken --checkAdult--
+        document.write(b);
+        function checkAdult(age){//checkAdult is initialized here.
+         return age>=18;//gives false in o/p: because there are 2 ages that are <=18.
+         //all the values should pass the condition.
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!--VIDEO 21,22,23:-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myFunction(name) {        //FUNCTION WITHOUT RETURN VALUE AND PARAMETER.
+          document.write("Hello " + name + "! <br>");
+        }
+        myFunction("Alice");
+        myFunction("Bob");
+
+ document.write("<br>");
+        function anApple(fruit,colour) {        //FUNCTION WITH PARAMETER AND ARGUMENTS.    
+document.write("i like " + fruit + "which is " + colour + "<br>");
+        }
+        anApple("TASTY", "red");
+        anApple("red AND JUICY.", "green");
+        document.write("<br>");
+
+        //-----------or----------------we can also use the function in this way BY USING PARAMETERS AD ARGUMENTS----------------
+        //------------VIDEO 23---FUNCTION WITH RETURN VALUE.---------
+        function greet(name){
+            return "Hello " + name + "!";
+        }
+        document.write(greet("Alice"));//HAve to write the function name with the argument inside the brackets.
+ document.write("<br>");
+
+
+        function myWork(job){
+            return"Hi i am doing my work as an " + job;
+        }
+        document.write("<br>"+ myWork("engineer") );
+ document.write("<br>");
+        function myFavouritePlace(place){
+            return   place + " is my destination for my holidays.";
+        }
+        document.write("<br>"+ myFavouritePlace("Thailand "));
+        document.write("<br>"+ myFavouritePlace("Dubai"));
+        document.write("<br>");
+
+        function theSum(a,b){
+            return a+b;
+        }
+        document.write( theSum(30,20) + "<br>");
+
+        function thePercentage(marks,totalmarks){
+            return (marks/totalmarks)*100;
+        }
+        document.write("<br>" + thePercentage(80,10) + "%");
+
+    </script>
+</body>
+</html>

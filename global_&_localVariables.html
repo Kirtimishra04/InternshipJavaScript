@@ -1,0 +1,24 @@
+<!--video 24: Global and Local Variables-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var globalVariable = "I am a global variable"; //GLOBAL VARIABLE DECLARED OUTSIDE THE FUNCTION.
+        function myFunction() {
+            var localVariable = "I am a local variable"; //LOCAL VARIABLE DECLARED INSIDE THE FUNCTION.
+            document.write(globalVariable + "<br>"); //ACCESSING GLOBAL VARIABLE INSIDE THE FUNCTION.
+            document.write(localVariable + "<br>"); //ACCESSING LOCAL VARIABLE INSIDE THE FUNCTION.
+        }
+        myFunction();
+        document.write(globalVariable + "<br>"); //ACCESSING GLOBAL VARIABLE OUTSIDE THE FUNCTION.
+        //document.write(localVariable + "<br>"); //THIS WILL CAUSE AN ERROR BECAUSE LOCAL VARIABLE IS NOT ACCESSIBLE OUTSIDE THE FUNCTION.
+    </script>
+   
+</body>
+</html>

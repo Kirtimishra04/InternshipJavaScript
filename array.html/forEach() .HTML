@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //forEach is used for performing same operation for all elements.
+var a=['KIRTI','SIMRAN','SUDESHNA','ADITI'];
+a.forEach( function(value,index){
+    document.write(index +" . "+ value+ "<br> ");
+}
+);
+document.write("<bR>");
+//OR----
+a.forEach(newFunction);
+function newFunction(value,index){
+    document.write(index +" . "+ value+ "<br>");
+}
+document.write("<bR>");
+//Q2...print only even numbers
+var num=[23,45,56,34,12,7,8,9];
+num.forEach(function(numBER){
+    if(numBER % 2 ===0)
+    document.write("Even NUMBER: " + numBER + "<bR>");
+});document.write("<bR>");
+
+//---Q3---print names
+var names=['kirti','priya','jeet'];
+//IF var name in place of names,then it gives error because name is an in-build function in js.
+names.forEach(function(name){
+    document.write("hello "+ name + "<br>");
+});
+
+    </script>
+</body>
+</html>

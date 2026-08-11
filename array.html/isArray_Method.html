@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     // --isArray() IS USED TO CHECK THE DECLARED VARIABLE IS AN ARRAY OR NOT.   
+var a=[23,34,45,56,67,78,89];
+var b=34;
+var c=Array.isArray(a);
+document.write( " CHECKING a :  " + c+ " <br>");
+var d=Array.isArray(b);
+document.write(d +"<bR> ");//b is not an array so it gives false.
+
+//using if else
+if(Array.isArray(a)){ //Array.isArray() CHECKS THE DATA TYPE OF VARIABLE.
+    document.write("this is a array<br>");
+}else{
+    document.write("this is not an array <br>");
+}
+
+
+
+    </script>
+</body>
+</html>

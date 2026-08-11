@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//  for/in loop is made for printing of object at a single time.. var a=   ; for(var i in a)
+// without for/in loop we have to print elements of object one by one.
+var  b={
+        name: 'k',
+        age: 23,
+        place: 'pokhari'
+      };
+      b.age=23;  //changing value of property(age);
+      for( var i in b){
+        document.write( i + ": " + b[i]+"<br>");
+      }
+
+
+    </script>
+</body>
+</html>

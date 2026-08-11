@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var a=40;
+var b=20;
+document.write(a+b + "<br>"); // This will GIVE  output: 120
+document.write('<br>');
+
+a++;
+document.write(a + "<br> <BR>");// This will GIVE  output: 41
+document.write(a-b + "<br>"); // This will GIVE  output: 80
+document.write(a*b + "<br>"); // This will GIVE  output: 2000
+document.write(a/b + "<br>"); // This will GIVE  output: 5  
+document.write(a%b + "<br>"); // This will GIVE   reminder in output: 0
+document.write(a**b + "<br>"); // ** is the exponencial output: 100
+document.write(a++ + "<br>"); // This will GIVE  output: 40
+//IT MEANS    a=a+1;  a=41.BUT IT PRINTS FIRSTS THE VALUE OF a=40 AND THEN INCREMENTED TO 41.
+//IN a++ the value of a is 40 but after this line the value of a will be 41.
+// BUT IN a++  FIRST THE VALUE OF a IS USED AND THEN IT IS INCREMENTED.
+
+document.write(++a + "<br>"); // This will GIVE  output: 42
+//THE INCREMENTED VALUE PF a++ IS 41 THATS WHY ++a IS 42 BECAUSE IN ++a THE VALUE OF a IS FIRST INCREMENTED AND THEN IT IS USED.
+// ++a IS 42 BECAUSE IN ++a THE VALUE OF a IS FIRST INCREMENTED AND THEN IT IS USED.
+
+document.write(++b + "<br>"); // This will GIVE  output: 21
+document.write(a-- + "<br>"); // This will GIVE  output: 42  ,IN REAL a=41 AFTER THE DECEMENTATION OF a--.
+//a-- IS 42 BECAUSE IN a-- THE VALUE OF a IS FIRST USED AND THEN IT IS DECREMENTED.  
+   </script>
+</body>
+</html>

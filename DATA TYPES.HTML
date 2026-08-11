@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var bodyName = "Body";
+        bodyName=23;
+        var y=undefined;
+        var z;
+        var x=null;
+        var ARRAY = ["HTML","CSS","JAVASCRIPT"];
+        document.write(typeof ARRAY + "<br>"); // This will GIVE  output: HTML,CSS,JAVASCRIPT
+
+
+        var anObject = {name:"Ashutosh", age:23, gender:"male"};
+        document.write(ARRAY + "<br>"); // This will GIVE  output: HTML
+                                      //----------
+
+              document.write(anObject + "<br>"); // This will GIVE  output: [object Object]
+        document.write(anObject.name + "<br>"); // This will GIVE  output: Ashutosh
+        document.write(anObject.age + "<br>"); // This will GIVE  output: 23
+        document.write(anObject.gender + "<br>"); // This will GIVE  output: male
+
+        document.write(x+ "<br>"); // This will GIVE  output: 23
+        //------
+        document.write(y+ "<br>"); // This will GIVE  output: undefined
+       //---
+        document.write(z+ "<br>"); // This will GIVE  output: null
+        //----
+        let valueName = true;//THIS GIVES BOOLEAN output only in lowercase.
+       //AND BOOLEA VALUE IS ALSO WRITTEN WITHOUT THE QUOTES.
+        document.write("<i>" + bodyName + "</i>"); // This will GIVE  output: 23
+        document.write("<br>");
+        document.write("<b>" + typeof bodyName + "</b>"); // ThE typeof IS AN INBUILD FUNCTION will GIVE  output: string
+        //THE TYPEOF HELPS TO KNOW THE DATA TYPE OF VARIABLE.
+        document.write("<br>");
+         document.write(valueName + "<br>"); // This will GIVE  output: true
+    
+        document.write("<b>" + typeof valueName + "</b>"); // This will GIVE  output: boolean
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!----video 25: Events-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script> 
+//---click event-
+//---------1st event.
+     function myClick(){
+    document.write("You clicked the button!<br>");
+  // alert("yes");
+}
+</script>
+    <button onclick="myClick()">Click Me</button>  <!---     it will always written outside the script tag because it is a button and not a script.-->
+     <p ondblclick="myClick()"> Double Click  </p>  <!--IT USED BY DOUBLE CLICK-->
+ <button oncontextmenu="myClick()">Right Click</button>  <!-- it will always written outside the script tag because it is a button and not a script.-->
+<!--<p onmouseenter="myClick()">IF MOUSE TOUCHES  </p> 
+<button onmouseout="myClick()">Mouse Out</button> -->
+<button onmouseup="myClick()">Mouse Up</button>
+<button onmousedown="myClick()">Mouse Down</button>
+<button onmousemove="myClick()">Mouse Move</button>
+<button onmouseover="myClick()">Mouse Over</button>
+<button onmouseleave="myClick()">Mouse Leave</button>
+<button onkeypress="myClick()">Key Press</button>
+<button onkeydown="myClick()">Key Down</button>
+<button onkeyup="myClick()">Key Up</button>
+<button onload="myClick()">Load</button>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti dolores repellendus porro laudantium doloremque id, amet quo placeat alias voluptas ipsum nostrum a itaque ex facilis harum ad quis, enim praesentium? Quaerat, odio molestias? Optio rerum esse ipsum praesentium atque soluta beatae inventore eaque, ratione maxime facilis repudiandae, recusandae eligendi tempora nisi assumenda dolores voluptate quam vel necessitatibus, rem impedit? Eveniet temporibus adipisci nam officiis, quos aspernatur autem magni suscipit, quidem consequatur ad, ratione repellat. Porro saepe cupiditate doloremque alias praesentium? Perferendis iste fugit quo ratione minus vero consequatur! Sed molestias et quisquam laborum totam aut pariatur possimus ex.</p>
+<button onscroll="myClick()">Scroll</button>
+
+<button onresize="myClick()">Resize</button>
+<button onfocus="myClick()">Focus</button>
+<button onblur="myClick()">Blur</button>
+</body>
+</html>

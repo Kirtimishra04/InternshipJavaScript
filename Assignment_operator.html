@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+ </head>
+ <body>
+    <script> 
+        var x = 15;
+        var y = 10;
+        var z = x + y;
+        //THE VALUE OF z CHANGES MULTIPLE TIMES IN THE BELOW CODE
+        //THE VALUE OF z=x+y=15+10=25,IN THE FIRST LINE OF CODE, 
+        // THEN IT CHANGES TO 30,27,54,13.5,1.5,2.25.
+        document.write(z);
+
+        document.write("<br>");
+        z += x; // This is equivalent to z = z + x.
+        document.write("<b>" + z + "</b>");
+        z -= 3; // This is equivalent to z = z - 3
+        document.write("<br>"); 
+        document.write(  z-y  );
+        z *= 2; // This is equivalent to z = z * 2
+        document.write("<br>");
+        document.write(z);
+        z /= 4; // This is equivalent to z = z / 4
+        document.write("<br>"); 
+        document.write(z);
+        z%=3; // This is equivalent to z = z % 3,,OUTPUT IS REMINDER
+        document.write("<br>"); 
+        document.write(z);
+        z**=2; // This is equivalent to z = z ** 2,,
+        document.write("<br>");
+        document.write( "<i>" + z + "</i>" );
+    </script>
+ </body>
+ </html>

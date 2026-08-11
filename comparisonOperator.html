@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //comparision operators are used to compare two values and return a boolean value (true or false) based on the comparison.
+        var a=24;
+        var b=25;
+        var c=24,d="2";
+
+        //we can write in console also but here we are writing in document.write() so that we can see the output in the browser.
+        document.write(a == c); // true
+        document.write("<br>");
+        document.write(a === c); // true,beacuse value and data types are same
+        document.write("<br>");
+        document.write(a===d); // false,beacuse value is same but data types are not same
+        document.write("<br>");
+        document.write(a != b); // true.......not equal.
+        document.write("<br>");
+        document.write(a !== b); // true........value and data types are not same.              
+        document.write("<br>");
+        document.write(a < b); // true
+        document.write("<br>"); 
+        document.write(a <= c); // true
+        document.write("<br>");
+        document.write(a > b); // false
+        document.write("<br>");
+        document.write(a >= c); // true
+        document.write("<br>");
+        document.write(a == b); // false
+        document.write("<br>");
+
+        document.write("<b>" +null == undefined +"</b>"); // true.beacuse nuLL AND UNDEFINED BOTH DOES NOT HAVE ANY VALUE.
+        document.write("<br>");
+        document.write("<b>" +null === undefined +"</b>"); // false
+        //beacuse null is a object and undefined is a data type.
+        document.write("<br>");
+
+    </script>
+</body>
+</html>

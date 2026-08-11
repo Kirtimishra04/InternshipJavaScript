@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//MULTIPLE arrays inside a array-->Multidimensional Array.
+var arr=[["harry ",18 ," male "," btech"],
+["preeti",23,"female",'bca '],
+ ["amar",34,'male','BA'],
+["amaN",32,'male','BA']];
+               document.write(arr.length);
+                document.write(arr[0][2] +"<Br>");
+                document.write("<table border='1px' cellplacing='0'>");
+                for( var a=0;a<4;a++){ //using nested loop for removing comma.
+                 document.write("<tr>");
+                 for(var b=0;b<4;b++){//b<4 because insid array there are four values like name,rollno,gender,degree.
+                document.write ("<td>" + arr[a] [b] +"</td>" );
+                 }
+                document.writen("</tr>");
+                }
+                document.write("</table>");
+                    </script>
+</body>
+</html>

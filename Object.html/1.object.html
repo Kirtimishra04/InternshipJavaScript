@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // salary and fullname are methods.
+      var anObject={
+        fname: "Kirti",
+        lname:"Mishra",
+        age: 21,
+        city: "Pokhari",
+        favMovies: ['Malamal','Sholey','Kuxkux'],//ADD ARRAY INSIDE OBJECT.
+        places: {               //an object inside object.
+             "country": "Switzerland",
+              "view" : "beautiful"},
+        salary: function(){    
+            return 50000;
+        },
+        fullname : function(){
+            return this.fname + " " + this.lname;//this .=owner of object(means anObject)
+        },
+      };
+      document.write(anObject.fname +"<bR>");
+        document.write(anObject.lname +"<Br>");
+          document.write(anObject.age +"<bR>");
+            document.write(anObject.city + "<Br>");
+                  document.write(anObject.favMovies +"<bR>");
+                       document.write(anObject.favMovies[2] +"<Br>");
+   // IT PRINTS WHOLE SALARY PROPERTY FROM OBJECT.    document.write(anObject.salary);//  FUNCTION ALWAYS WRITTEN WITH().
+                         document.write(anObject.salary()+"<Br>");
+                          document.write(anObject.fullname() +"<br>");
+                           document.write(anObject.places.country + "<br>");
+     console.log(anObject);
+     console.log(anObject.fname);
+      
+      
+      
+      </script>
+</body>
+</html>

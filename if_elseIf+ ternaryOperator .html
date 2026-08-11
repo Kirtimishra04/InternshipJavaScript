@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+        var percentage=70;
+        if(percentage>=80 && percentage<=100){
+            document.write("you got A+ grde<br>");
+        }
+        else if(percentage>=70 && percentage<=80)
+        {
+            document.write("<b> you got A grade<br> <b>");
+        }
+        else if(percentage>=60 && percentage<70){
+            document.write("You got B grade<br>");
+        }
+        else if(percentage>=50 && percentage<60){
+            document.write("You got C grade <br>");
+        }
+        else {
+            document.write("you are fail <br>");
+        }
+     /*
+        
+
+-------------------TERNARY OPERATOR-----------------------------
+
+       
+condition?true: false;
+
+*/
+
+        var age=20;
+        var result;
+       result=age>=18?"You are an adult":"You are a minor";
+         document.write(result);
+
+
+         var a=5;
+         var b;
+         a===5?b="a is equal to 5": b="a is not equal to 5";
+         document.write("<br>" + b);
+
+
+         b="value is" + (a>5? " greater than 5":" less than 5");
+         document.write("<br>" + b);
+
+         //or we can write it like this
+        // age>=18? result="You are an adult":result="You are a minor";
+         //document.write("<br>"+result);
+
+
+    </script>
+</body>
+</html>

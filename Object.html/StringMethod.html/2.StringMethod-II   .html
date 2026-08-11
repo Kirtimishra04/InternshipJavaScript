@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a="Mango is so sweet ";
+//--charAt()-----
+  var b=a.charAt(" 2");//IT IS SAME AS INDEX,IT PRINTS THE ELEMENT
+    document.write(b+"<br>");
+//--charCodeAt()-----
+  var c=a.charCodeAt(6);// IN THIS TYPE POSITION IS WRITTEN  AND ASCII VALUE IS RETURN IN OUTPUT OF THAT ELEMENT.
+    document.write(c+"<br>");
+//--fromCharCode()-----
+  var a1=String.fromCharCode("67");  //IT HAS AN IN-BUILD FUNC.-String
+    document.write(a1+"<br>"); // ascii CODE IS WRITTEN AND IT GIVES THEIR ALPHABETIC VALUE.
+//--concat()-----
+var a_2="Apple is tasty";
+  var b=a.concat(a_2);
+    document.write(b+"<br>");
+//--split()-----
+  var J=a.split(" ");  // this removes the value inside the brackets and replace with comma , for makking an array.
+    document.write(J+"<br>");
+    var J1=a.split("s"); //s is removed from string 
+    document.write(J1+"<bR>");
+//--repeat()-----
+  var b=a.repeat(" 2"); // the value is repeated according to the parameter.
+    document.write(b+"<br>");
+//--slice()-----
+  var b=a.slice(2,7);// value having index between 2-7 are printed but 7 is not printed.
+    document.write(b+"<br>");
+//--substr()-----
+  var b=a.substr( 2,5);//this is same as slice but
+    document.write(b+"<br>");//when the index 2 value is printed then 5 elements after that are counted and printed.
+//--substring()-----
+  var b=a.substring(2,7);//it is exactly same as slice,7th index value cant print
+    document.write(b+"<br>");//values print only from 2 index to 6 index.
+//--toString()-----
+var b1=50;
+  var b=b1.toString( );//it converts datatype into string
+    document.write(b+"<br>");
+    document.write( " b is string and 10 is number,addition is not possible: "+b+10 +"<br>");
+    document.write( "sum performed beacuse b1 is number:  "+b1+ 10+"<bR>");
+//--valueOf()-----
+  var b=a.valueOf( );  //it is a default value
+    document.write(b+"<br>");//work same  as document.write.
+
+
+
+
+
+    </script>
+</body>
+</html>

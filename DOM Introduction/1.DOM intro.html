@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+      <!--- ------DOM -- Document Object Module ..........-->
+      <header id="site-header">
+    <h1>DOM Practice Webpage</h1>
+    <p>Use this page to practice selecting and updating HTML elements with JavaScript.</p>
+  </header>
+
+  <nav id="main-nav">
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#form-section">Form</a></li>
+      <li><a href="#table-section">Table</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="intro"  class= " abc">
+        <header id="site-header">
+    <h1>DOM Practice Webpage</h1>
+    <p>Use this page to practice selecting and updating HTML elements with JavaScript.</p>
+  </header>
+
+  <nav id="main-nav">
+    <ul>
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#form-section">Form</a></li>
+      <li><a href="#table-section">Table</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="intro">
+       <h2>Introduction</h2>
+      <p>This page contains many HTML tags you can practice with:</p>
+      <ol>
+        <li><strong>Headings</strong> like <code>&lt;h1&gt;</code> to <code>&lt;h4&gt;</code></li>
+        <li><strong>Paragraphs</strong> and <strong>links</strong></li>
+        <li><strong>Images</strong> and <strong>lists</strong></li>
+        <li><strong>Forms</strong>, <strong>tables</strong>, and <strong>buttons</strong></li>
+      </ol>
+      <p class="card" id="status-card">
+        Status: <span id="status-text">Ready to practice DOM!</span>
+      </p>
+      <img
+        id="sample-image"
+        src="https://via.placeholder.com/640x240.png?text=DOM+Practice"
+        alt="DOM Practice"
+        style="width:100%; max-width: 640px; border-radius: 8px;"
+      />
+    </section>
+
+    <section id="features">
+     <h2>Page Features</h2>
+      <div class="grid">
+        <article class="box">
+          <h3>List Types</h3>
+          <ul id="feature-list">
+            <li>Unordered list item</li>
+            <li>Another item</li>
+            <li>One more item</li>
+          </ul>
+        </article>
+
+        <article class="box">
+          <h3>Definition List</h3>
+          <dl>
+            <dt>DOM</dt>
+            <dd>Document Object Model</dd>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language</dd>
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets</dd>
+          </dl>
+        </article>    
+           </div>
+    </section>
+
+    <section id="form-section">
+      <h2>DOM Practice Form</h2>
+      <form id="practice-form">
+        <label for="name-input">Name:</label><br />
+        <input type="text" id="name-input" name="name" placeholder="Enter your name" /><br /><br />
+
+        <label for="color-select">Favorite color:</label><br />
+        <select id="color-select" name="color">
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+          <option value="orange">Orange</option>
+          <option value="purple">Purple</option>
+        </select><br /><br />
+
+        <fieldset>
+              <legend>Choose your skills</legend>
+          <label><input type="checkbox" name="skills" value="html" checked /> HTML</label><br />
+          <label><input type="checkbox" name="skills" value="css" /> CSS</label><br />
+          <label><input type="checkbox" name="skills" value="js" /> JavaScript</label>
+        </fieldset><br />
+
+        <label for="comment-box">Comment:</label><br />
+        <textarea id="comment-box" rows="4" placeholder="Write something..."></textarea><br /><br />
+
+        <button type="button" id="submit-button">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+      <p id="form-message"></p>
+    </section>
+
+    <section id="table-section">
+      <h2>Sample Table</h2>
+        <table id="info-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Topic</th>
+            <th>Practice</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Selecting elements</td>
+            <td>querySelector / getElementById</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Changing text</td>
+            <td>textContent / innerHTML</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Adding classes</td>
+            <td>classList.add / remove</td>
+                 </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="interactive-section">
+      <h2>Interactive Elements</h2>
+      <p>Try updating this area with DOM methods:</p>
+      <div class="card">
+        <button id="change-title">Change Header</button>
+        <button id="toggle-image">Show / Hide Image</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 DOM Practice Page</p>
+  </footer>
+
+   <script src="1 DOM.js"></script>    
+</body>
+</html>

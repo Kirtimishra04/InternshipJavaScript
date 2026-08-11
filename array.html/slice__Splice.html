@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+   // 1---------Slice()--
+//    var a=[45,23,67,12,34]; // FORM NEW ARRAY WITH INDEX 2,3,4......slice(start,end )
+//    document.write( a +"<br>");
+// var b=a.slice(2,5);  //  we take 5 as end value ,it takes only from 2-4 ,skips the 5th index.
+// document.write( " slice (2,5) : " + b + "<bR>");
+// var c=a.slice(3);//it prints 3rd index and all the values after that index value.
+// document.write(c+ " <BR>");
+// var d=a.slice(-3); // when value is in negative  then index value get -reverse( -5,-4,-3,-2,-1)
+// document.write( " slice(-3) : " + d + "<BR>");// slice(-3),it prints all the value after -3.
+// var e=a.slice(-4,-1);  //skips value at -1.
+// document.write( " slice(-4,-1) : " + e + "<BR>");
+
+
+    //2------------Splice()--......slpice( index,how_many_delete " NEW vaue");
+    var a=[45 ,23 ,67,12,43,66,56];
+    document.write( a + "<br>");
+    a.splice(4,1,"N","P"); //THE DELETED VALUE IS 2 -MEANS THAT IN  splice(4,1 ).
+    //THE VALUE IS STRT DLETING FROM  THE ELEMENT AT 4TH INDEX 
+    document.write('<b> splice(3,0,"N","P"):' + a + '<br></b>');
+a.splice(3,3);
+document.write( " splice(3,3) : " + a + "<br>");
+</script>
+    
+</body>
+</html>

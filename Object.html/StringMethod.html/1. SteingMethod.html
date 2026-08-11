@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = "JavaScript is a good lang is";
+//----1st....length----
+    var b=a.length;// a length is a property not method or function    length()    is incorrect.
+    document.write(b+"<br>");
+ //......toLowerCase()...
+  var c=a.toLowerCase();
+    document.write(c+"<br>");
+ //------tOUpperCase()-- 
+  var d=a.toUpperCase();
+    document.write(d+"<br>");
+ //--includes()----
+  var e=a.includes("is");
+    document.write(e+"<br>");
+ //----endsWith()----
+  var f=a.endsWith(" is");
+    document.write(f+"<br>");
+    //console.log(f);
+ //---startsWith()---
+  var g =a.startsWith("J");          //  var g =a.startsWith("Java"); document.write(g+"<br>");
+   document.write(g+"<br>");         //BOTH GIVES TRUE
+ //---search()----
+   var i =a.search("g");          //IT WILL GIVE INDEX OF SEARCHING ELEMENT.
+   document.write( i+"<br>");
+//---match()---
+  var j =a.match(/is/g);         //IT MAKES ARRAY [ /  / - IS A REGULAR EXPRESSION..AND g IS GLOBAL   ] 
+   document.write(j+"<br>");      //IT MEANS IT collects all the element value from variable to mae array.
+// --indexOf()----
+  var k =a.indexOf("is");          //CHECKS THE INDEX FROM 0 TO LAST.
+   document.write(k+"<br>");
+// --lastIndexOf()----
+  var h=a.lastIndexOf("is");          //CHECKS THE INDEX FROM 0 TO LAST. BUT PRINT LAST FOUNDING VALUE.
+   document.write(h+"<br>"); 
+// --replace()----
+  var l =a.replace("good","better");        // REPLACE THE VALUE  
+   document.write(l+"<br>"); 
+//----trim()----
+var a2="    java      ";
+  var m=a2.trim(" is");
+    document.write(m+"<br>");  //DOCUMENT.WRITE RETURN NORML VALUE ALWAYS ,WITHOUT SPACING.
+     alert(a2);            //IT SHOWS SPACE IN ALERT.
+     alert(m);            // after using Trim,it removes space.
+
+
+
+
+    </script>
+</body>
+</html>

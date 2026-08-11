@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        //           there ARE SEVEN METHODS OF NUmber.
+    <script>                            document.write("<br>");
+    
+ //----Number()----            -CONVERTS ANY OF THE DATA TYPE INTO NUmber.
+var a= "34";
+var c=true;   var c1=Number(c); document.write(c1+"<br>") ; //IT CONVERTS TRUE(BOOLEAN VALUE) INTO 1.     
+var b=Number(a);
+document.write( "Number : "+ b +"<br>");   // CONVERTS STRING INTO NUMBER
+document.write( a+ 20 +"<bR>");      //a IS STRING TO ADDITION IS NOT POSIBLE.
+document.write( b+10+"<br>");
+
+//--parseInt()------
+var a2=3434.678;      //IT RETURNS THE integer value only not the value after point.
+var a23=parseInt(a2);
+document.write("parseInt:  "+ a23+"<br>");//it returns integer value.
+
+//--parseFloat()------
+var a2=34.678;     //it is same a parseInteger but it also returns the decimal value.
+var a23=parseFloat(a2);
+document.write( " parseFloat:" + a23+"<br>");
+
+//--isFinite()------
+var a2=34;        // it checks condition that variable is finite or not
+var a_ = Infinity;   //INFINITY IS A NON FINITE VALUE IT GIVES FALSE.
+var a_1 =Number.isFinite(a_);
+var a23= Number.isFinite(a2);  //and returns output in true or false.
+document.write ("isFinite :"+a23 +"<br>");
+document.write("isFinite: " + a_1 + " <br>");
+
+//--isInteger()------
+var a2=34.678;  //   -ive values are also integers,but not decimal.
+   //GIVES TRUE VALUE ON INTEGERS and fase on any other data type.
+var a1 = 56;       var a12=Number.isInteger(a1);
+document.write( "Number.isInteger:"+ a12+" <br>");
+
+var a23= Number.isInteger(a2);
+document.write( " Number.isInteger: " + a23+"<br>");
+
+
+//--toFixed()------
+var a2=34.678;      //IT RETURNS ONLY FIXED POINT AFTER DECIMAL.WHICH ARE SET AS PROPERTY
+var a23= a2.toFixed(1);  // GIVE AN APPROX VALUE .
+var a24= a2.toFixed(10);
+
+document.write( " toFixed:" + a23 + "<BR>"+ " toFixed: "+ a24+"<br>");
+
+
+//-- toPrecision ()------
+var a2=34.678;     //IT IS SAME AS toFixed 
+var a23= a2.toPrecision(4); // IT RETURNS THE NUMBER OF VALUE WHICH IS SET IN PROPERTY.
+//AND ALSP returns the approx value.
+document.write( "  toPrecision :" + a23+"<br>");
+
+
+    </script>
+</body>
+</html>

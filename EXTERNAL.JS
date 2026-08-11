@@ -1,0 +1,2 @@
+document.write("HELLO AGAIN ");
+//THIS IS EXTERNAL JAVASCRIPT CODE.
